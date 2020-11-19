@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Estado</title>
+</head>
+
+<body class="form-estado" style="overflow-y: hidden;">
+
+    <figure class="logo">
+        <img src="../img/logo2.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <img src="../img/ico1-small.png" alt="">
+        <div class="dropdown" style="margin-left: 5%;">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="color: rgb(96, 96, 96); font-weight: 500;">Hola</span>
+                <span style="font-weight: 500; color: #3F9147;">Marcela</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                style="padding-left: 10px; padding-right: 10px; text-align: center;">
+                <a class="dropdown-item" href="#" style="color: rgb(96, 96, 96);">
+                    Mi perfil
+                </a>
+
+                <a class="dropdown-item" href="#" id="sesion">
+                    Iniciar sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="presente-estado">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="padding: 20px;">
+                    <img src="../img/ico1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Marcela Correa</h5>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <b class="n-prod">3</b>
+                            productos en mora
+                        </li>
+
+                        <li class="list-group-item">
+                            <b class="n-prod">1</b>
+                            producto a negociar</li>
+                    </ul>
+
+                    <div class="btn-card card-body">
+                        <a href="#" class="btn btn-success btn-sm btn-block"
+                            style="background: #3F9147;  font-weight: 500;">Administrar deudas</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-9">
+                <h2 class="titulo-estado">Estado</h2>
+                <div class="card" style="height: 87%;">
+                    <div class="card-body" style="max-height: 75%; overflow-y: scroll; 
+                                    overflow-x: hidden;">
+                        <div>
+                            <h7 class="titulo-estado">Productos en mora:
+                            </h7>
+                            <strong style="color: #5C4192;">3</strong>
+                            <div class="row" style="margin-top: 2%;">
+                                <div class="col-md-3">
+                                    <span>Entidad</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>N° cuenta</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>Estado</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>Saldo</span>
+                                </div>
+                            </div>
+
+                            <div class="row data-estado">
+                                <div class="col-md-3">
+                                    <img src="../img/ico1-small.png" alt="icon-sm">
+                                    <h7>BANCUPO</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>*********4590</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="mora text-danger">En mora</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>$190.000</h7>
+                                </div>
+                            </div>
+
+                            <div class="row data-estado">
+                                <div class="col-md-3">
+                                    <img src="../img/ico1-small.png" alt="icon-sm">
+                                    <h7>BANCUPO</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>*********4590</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7 class="mora text-danger">En mora</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>$190.000</h7>
+                                </div>
+                            </div>
+
+                            <div class="row data-estado" style="margin-bottom: 3%;">
+                                <div class="col-md-3">
+                                    <img src="../img/ico1-small.png" alt="ico-sm">
+                                    <h7>BANCUPO</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>*********4590</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7 class="mora text-danger">En mora</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>$190.000</h7>
+                                </div>
+                            </div>
+
+                            <h7 class="titulo-estado">Productos a negociar:</h7>
+                            <strong style="color: #5C4192;">1</strong>
+                            <div class="row data-estado">
+                                <div class="col-md-3">
+                                    <img src="../img/ico1-small.png" alt="ico-sm">
+                                    <h7>BANCUPO</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>*********4590</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7 class="mora text-danger">En mora</h7>
+                                </div>
+                                <div class="col-md-3">
+                                    <h7>$190.000</h7>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cont-girl" style="position: absolute; right: 3%; top: 71%;">
+        <img src="../img/girl1.png" alt="">
+    </div>
+
+</body>
+
+</html>

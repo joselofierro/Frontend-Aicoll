@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Perfil empresa</title>
+</head>
+
+<body class="manejo-deudas">
+    <figure class="logo">
+        <img src="../img/logo2.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <img src="../img/ico1-small.png" alt="">
+        <div class="dropdown" style="margin-left: 5%;">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="color: rgb(96, 96, 96); font-weight: 500;">Hola</span>
+                <span style="font-weight: 500; color: #3F9147;">Compañia X</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                style="padding-left: 10px; padding-right: 10px; text-align: center;">
+                <a class="dropdown-item" href="#" style="color: rgb(96, 96, 96);">
+                    Mi perfil
+                </a>
+
+                <a class="dropdown-item" href="#" id="sesion">
+                    Iniciar sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="presente-estado">
+        <div class="row">
+            <!--Card base que se utiliza en varias paginas-->
+            <div class="col-sm-3">
+                <div class="card" style="padding-top: 8%; width: 18rem;">
+                    <img src="../img/ico1.png" style="margin: auto; width: 100px;" alt="img-empresa">
+                    <h6 class="card-title" style="text-align: center;">Compañia X</h6>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <img src="../img/empresa1x.png" alt="icon">
+                                    <a class="card-subtitle link-empresa" href="#">Datos de empresa</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item ls-click">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/informes1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa dropdown-toggle" id="dropdown-informes"
+                                            href="informes.html" role="button">Informes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="ls-click">
+                            <ul class="list-group list-group-flush" id="sbls-di">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/segmentacion.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Segmentación</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/seguimiento1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Seguimiento y control</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Matriz de riesgo</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Cosechas</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Modelo de perdida esperada</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/deudores1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa" href="#">Deudores</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item ls-click-1">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/negociaciones1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa dropdown-toggle" id="dropdown-informes"
+                                            href="#" role="button">Negociaciones</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="ls-click-1">
+                            <ul class="list-group list-group-flush" id="sbls-do">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/ico-edit.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Parametrización</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+            <!--Card base que se utiliza en varias paginas-->
+
+            <div class="col-sm-9">
+                <h2 class="titulo-estado">Deudores</h2>
+                <div class="card" style="height: 296px;">
+                    <div class="card-body" style="height: 270px; overflow: auto;">
+                        <div class="row">
+                            <div class="col">
+                                <form action="">
+                                    <div class="input-group" style="width: 65%;">
+                                        <input type="search" class="form-control py-2 border-right-0 border"
+                                            placeholder="Buscar" name="buscar">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-default border-left-0 border" type="submit">
+                                                <i style="color: #5C4192;" class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <div class="col d-flex justify-content-end">
+                                <div class="btn-group">
+                                    <button style="background-color: #3F9147;"
+                                        class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Exportar clientes
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 2%;">
+                            <div class="col-4">
+                                <span>Cliente</span>
+                            </div>
+                            <div class="col">
+                                <span>Cedula</span>
+                            </div>
+                            <div class="col">
+                                <span>N° creditos</span>
+                            </div>
+                            <div class="col">
+                                <span>Calificación</span>
+                            </div>
+                            <div class="col">
+                                <span>Saldos</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+
+                        <div class="row data-estado">
+                            <div class="col-4">
+                                <img src="../img/ico1-small.png" alt="icon-sm">
+                                <h7>Marcela Correo Jimenez</h7>
+                            </div>
+                            <div class="col">
+                                <h7>107450393</h7>
+                            </div>
+                            <div class="col">
+                                <h7>**********123</h7>
+                            </div>
+                            <div class="col-1">
+                                <h7>AA</h7>
+                            </div>
+                            <div class="col">
+                                <h7>$289.000.000</h7>
+                            </div>
+                            <div class="col">
+                                <a href="info_cliente.html" class="link-detalle">Ver detalle</a>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado">
+                            <div class="col-4">
+                                <img src="../img/ico1-small.png" alt="icon-sm">
+                                <h7>Marcela Correo Jimenez</h7>
+                            </div>
+                            <div class="col">
+                                <h7>107450393</h7>
+                            </div>
+                            <div class="col">
+                                <h7>**********123</h7>
+                            </div>
+                            <div class="col-1">
+                                <h7>AA</h7>
+                            </div>
+                            <div class="col">
+                                <h7>$289.000.000</h7>
+                            </div>
+                            <div class="col">
+                                <a href="" class="link-detalle">Ver detalle</a>
+                            </div>
+                        </div>
+
+
+                        <div class="row data-estado">
+                            <div class="col-4">
+                                <img src="../img/ico1-small.png" alt="icon-sm">
+                                <h7>Camus SLR</h7>
+                            </div>
+                            <div class="col">
+                                <h7>107450393</h7>
+                            </div>
+                            <div class="col">
+                                <h7>**********123</h7>
+                            </div>
+                            <div class="col-1">
+                                <h7>AA</h7>
+                            </div>
+                            <div class="col">
+                                <h7>$289.000.000</h7>
+                            </div>
+                            <div class="col">
+                                <a href="" class="link-detalle">Ver detalle</a>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado" style="margin-bottom: 3%;">
+                            <div class="col-4">
+                                <img src="../img/ico1-small.png" alt="icon-sm">
+                                <h7>Marcela Correo Jimenez</h7>
+                            </div>
+                            <div class="col">
+                                <h7>107450393</h7>
+                            </div>
+                            <div class="col">
+                                <h7>**********123</h7>
+                            </div>
+                            <div class="col-1">
+                                <h7>AA</h7>
+                            </div>
+                            <div class="col">
+                                <h7>$289.000.000</h7>
+                            </div>
+                            <div class="col">
+                                <a href="" class="link-detalle">Ver detalle</a>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado" style="margin-bottom: 3%;">
+                            <div class="col-4">
+                                <img src="../img/ico1-small.png" alt="icon-sm">
+                                <h7>Marcela Correo Jimenez</h7>
+                            </div>
+                            <div class="col">
+                                <h7>107450393</h7>
+                            </div>
+                            <div class="col">
+                                <h7>**********123</h7>
+                            </div>
+                            <div class="col-1">
+                                <h7>AA</h7>
+                            </div>
+                            <div class="col">
+                                <h7>$289.000.000</h7>
+                            </div>
+                            <div class="col">
+                                <a href="" class="link-detalle">Ver detalle</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="../js/imagen.js"></script>
+
+</html>

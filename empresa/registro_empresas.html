@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+
+<body class="login-empresa">
+
+    <figure class="logo">
+        <img src="../img/logo.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <a href="" class="btn btn-success btn-md"
+            style="background: #3F9147; width: 140px;  font-weight: 500;">Volver</a>
+    </div>
+
+    <div class="contenedor-form-2">
+        <form>
+            <h2 style="text-align: center; margin-bottom: 5%;" class="titulo">Registro</h2>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="tidenfiticacion">Tipo de ID</label><br>
+                    <select id="tidenfiticación" class="style-input" style="width: 100%; padding-top: 3px;">
+                        <option selected value="ciudadania">NIT</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="nidentificacion">Numero de identificación</label>
+                    <input type="text" name="nidentificacion" id="nidentificacion" class="style-input"
+                        style="width: 100%;">
+                    <br>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="nombre">Razón social</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" class="style-input" style="width: 100%;">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="apellidos">Representante legal</label><br>
+                    <input type="text" name="apellidos" id="apellidos" class="style-input" style="width: 100%;">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="style-input" style="width: 100%;">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="movil">Móvil</label>
+                    <input type="text" name="movil" id="movil" class="style-input" style="width: 100%;">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="contrasena">Contraseña</label>
+                    <input type="password" name="contrasena" id="contrasena" class="style-input" style="width: 100%;">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="confirm_contrasena">Confirmar contraseña</label>
+                    <input type="password" name="confirm_contrasena" id="confirm_contrasena" class="style-input"
+                        style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="contenedor-2">
+                <div class="form-check" style="margin-bottom: 3%;">
+                    <input class="form-check-input" type="checkbox" id="politicas">
+                    <label class="form-check-label" for="politicas">
+                        He leído y acepto los <a href="" style="color: #3F9147;">Términos legales y política <br> de
+                            privacidad
+                            de Aicoll
+                        </a>
+                    </label>
+                </div>
+
+                <button class="btn-u">Registrarse</button>
+
+                <a href="login_empresas.html" id="registrar">Iniciar sesión</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

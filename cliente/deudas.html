@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Deudas</title>
+</head>
+
+<body class="manejo-deudas">
+    <figure class="logo">
+        <img src="../img/logo2.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <img src="../img/ico1-small.png" alt="">
+        <div class="dropdown" style="margin-left: 5%;">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="color: rgb(96, 96, 96); font-weight: 500;">Hola</span>
+                <span style="font-weight: 500; color: #3F9147;">Marcela</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                style="padding-left: 10px; padding-right: 10px; text-align: center;">
+                <a class="dropdown-item" href="#" style="color: rgb(96, 96, 96);">
+                    Mi perfil
+                </a>
+
+                <a class="dropdown-item" href="#" id="sesion">
+                    Iniciar sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="presente-estado">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="padding:13px;">
+
+                    <div class="card-body">
+                        <p class="card-subtitle mb-2 text-muted">Filtrar por:</p>
+
+                        <h5 class="card-subtitle">Entidad</h5>
+
+                        <div class="form-check">
+                            <input type="radio" name="bank-radios" class="form-check-input" id="bank-radio-1"
+                                value="todos" checked="checked">
+
+                            <label for="bank-radio-1" class="form-check-label">Todas</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" name="bank-radios" class="form-check-input" id="bank-radio-2"
+                                value="bancupo">
+                            <label for="bank-radio-2" class="form-check-label">Bancupo</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" name="bank-radios" class="form-check-input" id="bank-radio-3"
+                                value="bancox">
+                            <label for="bank-radio-3" class="form-check-label">Banco xx</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" name="bank-radios" class="form-check-input" id="bank-radio-4"
+                                value="avillas">
+                            <label for="bank-radio-4" class="form-check-label">Av villas</label>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Estado</h5>
+
+                        <div class="form-check">
+                            <input type="radio" name="estado-radios" id="estado-radio-1" class="form-check-input"
+                                value="mora">
+                            <label for="estado-radio-1" class="form-check-label">En mora</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="estado-radios" id="estado-radio-2" class="form-check-input"
+                                value="dia">
+                            <label for="estado-radio-2" class="form-check-label">Al día</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="estado-radios" id="estado-radio-3" class="form-check-input"
+                                value="negociacion">
+                            <label for="estadio-radio-3" class="form-check-label">En negociación</label>
+                        </div>
+
+                        <div class="btn-card" style="margin-top: 15%;">
+                            <a href="#" class="btn btn-success btn-sm btn-block"
+                                style="background: #3F9147;  font-weight: 500;">Aplicar</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <h2 class="titulo-estado" style="display: inline;">Administrador de deudas -
+                </h2>
+                <h3 style="display: inline; font-weight: 300; color: #5C4192;">Tiene 3 productos a negociar</h3>
+                <p style="color: rgb(96, 96, 96);">En negociar deudas puede administrar las
+                    deudas pendientes con nuestras entidades alidas</p>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Entidad</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span>Producto</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span>Tiempo y saldo mora</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span>Actualización</span>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado">
+                            <div class="col-sm-3">
+                                <img style="vertical-align: unset;" src="../img/ico1-small.png" alt="icon-sm">
+                                <div id="est-e">
+                                    <h7>BANCUPO</h7>
+                                    <p class="text-danger">En mora</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>*********4590</h7>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>30 días</h7>
+                                <p style="color: rgb(96, 96, 96);">$2.500.000</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>1 Mayo</h7>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="" data-toggle="modal" data-target="#modalDeuda"
+                                    class="btn btn-success btn-sm btn-block"
+                                    style="background: #3F9147;  font-weight: 500;">Negociar
+                                    deuda</a>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado">
+                            <div class="col-sm-3">
+                                <img style="vertical-align: unset;" src="../img/ico1-small.png" alt="icon-sm">
+                                <div id="est-e">
+                                    <h7>BANCUPO</h7>
+                                    <p class="text-success">Al día</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>*********4590</h7>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>30 días</h7>
+                                <p style="color: rgb(96, 96, 96);">$2.500.000</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>1 Mayo</h7>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="" class="btn btn-success btn-sm btn-block"
+                                    style="background: #3F9147;  font-weight: 500;">Ver
+                                    estado</a>
+                            </div>
+                        </div>
+
+                        <div class="row data-estado">
+                            <div class="col-sm-3">
+                                <img style="vertical-align: unset;" src="../img/ico1-small.png" alt="icon-sm">
+                                <div id="est-e">
+                                    <h7>BANCUPO</h7>
+                                    <p class="text-warning">En negociación</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>*********4590</h7>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>30 días</h7>
+                                <p style="color: rgb(96, 96, 96);">$2.500.000</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <h7>1 Mayo</h7>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="" class="btn btn-success btn-sm btn-block"
+                                    style="background: #3F9147;  font-weight: 500;">Ver
+                                    estado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDeuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="display: flex;">
+
+                    <div class="img-chica">
+                        <img src="../img/girl2.png" alt="chica-credito">
+                    </div>
+
+                    <div class="form-deuda">
+                        <strong style="color:  #5C4192; font-size: 1.25rem;">Negociar tu deuda</strong> <br>
+                        <small style="color: rgb(96, 96, 96);">Aquí podrá negociar su deuda por un valor de</small>
+                        <i style="color: rgb(96,96,96);">$2.500.000</i> <br><br>
+
+                        <small style="color: rgb(96, 96, 96);">Hacer propuesta de pago en linea</small>
+
+                        <form action="">
+
+                            <div class="form-group">
+                                <label class="form-label" for="cap-mensual">Capacidad de pago mensual</label>
+                                <input type="text" name="cap-mensual" id="cap-mensual" class="style-input"
+                                    style="width: 80%;" placeholder="Valor en números, sin puntos ni comas">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="select-pagos">Cantidad de pagos</label><br>
+                                <select id="select-pagos" class="style-input" style="width: 80%; padding-top: 3px;">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <br>
+                                <small style="color: rgb(96,96,96);">Plazo máximo permitido hasta 12 meses</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha-pago" class="form-label">Fecha de pago</label> <br>
+                                <input type="date" name="fecha-pago" id="fecha-pago" class="style-input"
+                                    style="width: 80%;">
+                            </div>
+
+                            <a href="" class="btn btn-success btn-sm btn-block"
+                                style="background: #3F9147;  font-weight: 500;">Hacer propuesta de negociación</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

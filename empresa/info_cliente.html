@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Perfil empresa</title>
+</head>
+
+<body class="manejo-deudas">
+    <figure class="logo">
+        <img src="../img/logo2.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <img src="../img/ico1-small.png" alt="">
+        <div class="dropdown" style="margin-left: 5%;">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="color: rgb(96, 96, 96); font-weight: 500;">Hola</span>
+                <span style="font-weight: 500; color: #3F9147;">Compañia X</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                style="padding-left: 10px; padding-right: 10px; text-align: center;">
+                <a class="dropdown-item" href="#" style="color: rgb(96, 96, 96);">
+                    Mi perfil
+                </a>
+
+                <a class="dropdown-item" href="#" id="sesion">
+                    Iniciar sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="presente-estado">
+        <div class="row">
+            <!--Card base que se utiliza en varias paginas-->
+            <div class="col-sm-3">
+                <div class="card" style="padding-top: 8%; width: 18rem;">
+                    <img src="../img/ico1.png" style="margin: auto; width: 100px;" alt="img-empresa">
+                    <h6 class="card-title" style="text-align: center;">Compañia X</h6>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <img src="../img/empresa1x.png" alt="icon">
+                                    <a class="card-subtitle link-empresa" href="#">Datos de empresa</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item ls-click">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/informes1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa dropdown-toggle" id="dropdown-informes"
+                                            href="informes.html" role="button">Informes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="ls-click">
+                            <ul class="list-group list-group-flush" id="sbls-di">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/segmentacion.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Segmentación</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/seguimiento1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Seguimiento y control</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Matriz de riesgo</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Cosechas</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/estadistica1x.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Modelo de perdida esperada</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/deudores1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa" href="#">Deudores</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item ls-click-1">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: left;">
+                                    <div class="dropdown show">
+                                        <img src="../img/negociaciones1x.png" alt="icon">
+                                        <a class=" card-subtitle link-empresa dropdown-toggle" id="dropdown-informes"
+                                            href="#" role="button">Negociaciones</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="ls-click-1">
+                            <ul class="list-group list-group-flush" id="sbls-do">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="sblist">
+                                            <img src="../img/ico-edit.png" alt="icon">
+                                            <a class="card-subtitle sublist-c" href="">Parametrización</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+            <!--Card base que se utiliza en varias paginas-->
+
+            <div class="col-sm-9">
+                <h2 class="titulo-estado">Información del cliente</h2>
+                <div class="card" style="height: 296px;">
+                    <div class="card-body" style="height: 280px; overflow: auto;">
+                        <div class="row">
+
+                            <div class="col client-col">
+
+                                <div style="margin: auto; width: 50%;">
+                                    <img src="../img/ico1.png" alt="icon">
+                                </div>
+
+
+                                <p class="card-title txt-c">Nombre</p>
+                                <p class="card-subtitle txt-n text-muted">Marcela Correa Jiménez</p>
+
+                                <p class="card-title txt-c">Identificación</p>
+                                <p class="card-subtitle txt-n text-muted">1075306958</p>
+
+                                <p class="card-title txt-c">Edad</p>
+                                <p class="card-subtitle txt-n text-muted">32</p>
+
+                                <p class="card-title txt-c">Movil</p>
+                                <p class="card-subtitle txt-n text-muted">3115410020</p>
+
+                                <p class="card-title txt-c">Email</p>
+                                <p class="card-subtitle txt-n text-muted">marcela@gmail.com</p>
+
+                                <p class="card-title txt-c">Dirección</p>
+                                <p class="card-subtitle txt-n text-muted">Cra 29 #12-21</p>
+
+                                <p class="card-title txt-c">Ciudad</p>
+                                <p class="card-subtitle txt-n text-muted">Bogota</p>
+
+
+                            </div>
+
+                            <div class="col client-col">
+                                <p class="card-title txt-c">Actividad economica</p>
+                                <p class="card-subtitle txt-n text-muted">Independiente</p>
+
+                                <p class="card-title txt-c">Ingresos</p>
+                                <p class="card-subtitle txt-n text-muted">$1.500.000</p>
+
+                                <p class="card-title txt-c">Cuotas financieras</p>
+                                <p class="card-subtitle txt-n text-muted">$500.000</p>
+
+                                <p class="card-title txt-c">Valor mercado mora</p>
+                                <p class="card-subtitle txt-n text-muted">$ -</p>
+
+                                <p class="card-title txt-c">Share wallet</p>
+                                <p class="card-subtitle txt-n text-muted">20%</p>
+
+                                <p class="card-title txt-c">Total saldo deudas</p>
+                                <p class="card-subtitle txt-n text-muted">$XXXXX</p>
+
+                                <p class="card-title txt-c">Valor vencido</p>
+                                <p class="card-subtitle txt-n text-muted">$XXXXX</p>
+
+                                <p class="card-title txt-c">% Deuda pagado</p>
+                                <p class="card-subtitle txt-n text-muted">%</p>
+                            </div>
+                            <div class="col client-col">
+                                <p class="card-title txt-c">Calificación interna</p>
+                                <p class="card-subtitle txt-n text-muted">A,B,C,D,E</p>
+
+                                <p class="card-title txt-c">Calificación externa</p>
+                                <p class="card-subtitle txt-n text-muted">AA,A,BB,B,CC,C</p>
+
+                                <p class="card-title txt-c">Calificación Aicoll</p>
+                                <p class="card-subtitle txt-n text-muted">AA,A,BB,B,CC,C</p>
+
+                                <p class="card-title txt-c">Fecha ult consulta mercado</p>
+                                <p class="card-subtitle txt-n text-muted">09/09/2014</p>
+
+                                <p class="card-title txt-c">Oficina entidad</p>
+                                <p class="card-subtitle txt-n text-muted">Neiva</p>
+
+                                <p class="card-title txt-c">Alerta score</p>
+                                <p class="card-subtitle txt-n text-muted">Neiva</p>
+
+                                <p class="card-title txt-c">Alerta mora</p>
+                                <p class="card-subtitle txt-n text-muted">Neiva</p>
+
+                                <p class="card-title txt-c">Ind sobreendeudamiento</p>
+                                <p class="card-subtitle txt-n text-muted">10%</p>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="row" style="margin-top: 2%;">
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="../js/imagen.js"></script>
+
+</html>

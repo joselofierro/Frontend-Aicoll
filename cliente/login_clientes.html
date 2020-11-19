@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form_clientes.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="../js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>Personas</title>
+</head>
+
+<body class="form-cliente">
+    <figure class="logo">
+        <img src="../img/logo.png" alt="Aicoll" class="">
+    </figure>
+
+    <div class="contenedor-boton">
+        <a href="" class="btn btn-success btn-md"
+            style="background: #3F9147; width: 140px;  font-weight: 500;">Volver</a>
+    </div>
+
+    <div class="contenedor-form">
+        <form>
+            <h2 style="text-align: center; margin-bottom: 8%;" class="titulo">Inicio de sesión</h2>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="tidentificacion">Tipo de identificación</label><br>
+                    <select id="tidenfiticación" class="style-input" style="width: 100%; padding-top: 3px;">
+                        <option value="ciudadania">Cédula de ciudadania</option>
+                        <option value="extranjeria">Cédula de extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label class="form-label" for="nidentificacion">Numero de identificación</label>
+                    <input type="text" name="nidentificacion" id="nidentificacion" class="style-input"
+                        style="width: 100%;">
+                    <br>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="contrasena">Contraseña</label>
+                <br>
+                <input type="password" name="contrasena" id="contrasena" class="style-input" style="width: 100%;">
+            </div>
+
+            <div class="contenedor-2">
+
+                <a href="" id="olvcontra" data-toggle="modal" data-target="#modalcontra">¿Olvidó
+                    su
+                    contraseña?</a>
+
+                <button class="btn-u" style="margin-bottom: 20px;">Ingresar</button>
+
+                <h7 style="color:rgb(96, 96, 96);">¿Aún no estás registrado?</h7>
+                <a href="" id="registrar">Registrarse</a>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalcontra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="margin-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="display: flex;">
+
+                    <div class="img-girl">
+                        <img src="../img/girl-recuperar-contraseña.png" alt="girl-recp-contra">
+                    </div>
+
+
+                    <div class="info-contra">
+                        <h4 style="text-align: center; color:  #5C4192;">Algo está mal con los datos de ingreso</h4>
+                        <br>
+                        <small style="text-align: center; color: rgb(96, 96, 96); font-weight: 500;">Por favor inténtelo
+                            de nuevo, si no
+                            recuerda la contraseña
+                            puede recuperarla con la
+                            cuenta
+                            de correo</small>
+
+                        <br>
+
+                        <a href="../contra/recuperar_contra.html" class="btn btn-success btn-sm btn-block"
+                            style="background: #3F9147;  font-weight: 500;">Recuperar contraseña</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
